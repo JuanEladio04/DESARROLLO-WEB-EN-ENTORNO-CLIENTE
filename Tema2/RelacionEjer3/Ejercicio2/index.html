@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="objects/emplesa.js"></script>
+    <script src="objects/cliente.js"></script>
+    <script src="objects/producto.js"></script>
+    <script src="objects/factura.js"></script>
+</head>
+<body>
+    <h1>Lista de la compra</h1>
+    <script>
+        let empresa = new Empresa('Mercadona', 'irection', '629841236', '8546P');
+        let cliente = new Cliente(1, '123456789P', 'Jose', 'domicilio1', '41566', 'Lucena', 'Cordoba');
+        const productos = [
+            { nombre: 'ps4', precio: 500 },
+            { nombre: 'palomitas', precio: 3 },
+        ];
+        let factura = new Factura(empresa, cliente, productos, 0, 'Visa');
+        factura.calculaImporte(productos);
+        factura.muestraImporte();
+
+    </script>
+</body>
+</html>
