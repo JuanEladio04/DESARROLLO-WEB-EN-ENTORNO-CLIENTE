@@ -17,6 +17,3 @@ function obtenerInformacionFecha() {
 
   document.write(mensaje);
 }
-
-
-

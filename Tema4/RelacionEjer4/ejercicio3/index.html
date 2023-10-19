@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="main.js"></script>
+</head>
+<body>
+    <!--
+        3) Realizar una función javascript que elimine una subcadena de texto de un texto dado
+        Ej:eliminarSubcadena("xyz1, xyz2, xyz3, xyz4 y xyz5", "xyz") devolverá "1, 2, 3, 4 y 5” .
+
+    -->
+    <h1>
+        Eliminar cadena de texto
+    </h1>
+    <form action="">
+        <label for="">
+            Introduce una cadena de texto que se repita como un patron separado por comas y espacios ej(xyz1, xyz2, xyz3, xyz4, xyz5)
+        </label>
+        <input type="text" name="iTTString">
+        <br>
+        <label for="">
+            Introduce una parte de la cadena para eliminar del patrón
+        </label>
+        <input type="text" name="iTTWordToErase">
+        <br>
+        <input type="button" value="Modifica patrón" onclick="document.write(erasePattern(iTTString.value, iTTWordToErase.value))">
+    </form>
+</body>
+</html>
