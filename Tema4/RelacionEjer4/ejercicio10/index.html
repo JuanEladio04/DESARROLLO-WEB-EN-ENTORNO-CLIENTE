@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="objects/Pelicula.js"></script>
+</head>
+<body>
+    <script>
+        let peliculas = [
+            new Pelicula("ES1234567", "La lista de Schindler", "Steven Spielberg", "1993", "Estados Unidos", "Biography", "9.0"),
+            new Pelicula("ES2345678", "El padrino", "Francis Ford Coppola", "1972", "Estados Unidos", "Crime", "9.2"),
+            new Pelicula("ES3456789", "El caballero oscuro", "Christopher Nolan", "2008", "Reino Unido, Estados Unidos", "Action", "9.0")
+        ];
+
+        peliculas.forEach(pelicula => {
+            document.write("<p>" + pelicula.toString() + "</p>");
+        });
+    </script>
+</body>
+</html>

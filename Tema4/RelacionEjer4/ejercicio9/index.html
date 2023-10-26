@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="OrderedNumberarray.js"></script>
+</head>
+<body>
+    <!--
+        9) Programa una función que dado un arreglo de números devuelva un objeto con dos arrays, el primero
+        contendrá el contenido del array original ordenado en forma ascendente y el segundo, el contenido del
+        array original ordenado de forma descendiente.
+    -->
+    <form action="">
+        <label>
+            Introduce una cadena de números separada por comas:
+        </label>
+        <br>
+        <input type="text" name="iTTNumbers">
+        <input type="button" value="Calcula" onclick="
+            let paresEImpares = new OrderedNumberarray(iTTNumbers.value);
+            paresEImpares.toString();
+        ">
+    </form>
+</body>
+</html>
