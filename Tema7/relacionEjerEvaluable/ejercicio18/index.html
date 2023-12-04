@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <h1>Centro educativo I.E.S Marqués de Comares</h1>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6">
+                <h2>Matriculacion en el ciclo de grado superior DAW</h2>
+                <form action="" onsubmit="validarRadios() && validarCheckboxes();" id="dawForm">
+                    Apellidos: <input type="text" name="ittSName" required pattern="^[A-Z][a-z]+(\s[A-Z][a-z]+)*$">
+                    Nombre: <input type="text" name="ittSName" required pattern="^[A-Z][a-z]+(\s[A-Z][a-z]+)*$">
+                    <br>
+                    Domicilio: <input type="text" name="ittDomicilio" required pattern="^[A-Za-z0-9\s\.,]+$">
+                    <br>
+                    Sexo:
+                    <input type="radio" name="itrGender" value="Hombre">Hombre
+                    <input type="radio" name="itrGender" value="Mujer">Mujer
+
+                    <br>
+                    Curso
+                    <select name="sCurso">
+                        <option value="1">1º</option>
+                        <option value="2">2º</option>
+                    </select>
+                    <br>
+                    Módulos en que se matricula: <br>
+                    <input type="checkbox" name="itcbModules" value="Entornos de Desarrollo"> Entornos de Desarrollo
+                    <br>
+                    <input type="checkbox" name="itcbModules" value="Bases e Datos"> Bases e Datos <br>
+                    <input type="checkbox" name="itcbModules" value="Programacion"> Programación <br>
+                    <input type="checkbox" name="itcbModules" value="Sistemas operativos"> Sistemas operativos <br>
+                    <input type="checkbox" name="itcbModules" value="Formacion y orientacion laboral"> Formacion y
+                    orientacion laboral <br>
+                    <input type="checkbox" name="itcbModules" value="Desarrollo web entorno cliente"> Desarrollo web
+                    entorno cliente <br>
+                    <input type="checkbox" name="itcbModules" value="Desarrollo web entorno servidor"> Desarrollo web
+                    entorno servidor <br>
+                    <input type="checkbox" name="itcbModules" value="Despliegue de Aplicaciones Web"> Despliegue de
+                    Aplicaciones Web <br>
+                    <input type="checkbox" name="itcbModules" value="Desarrollo interfaces Web"> Desarrollo interfaces
+                    Web <br>
+                    <input type="checkbox" name="itcbModules" value="Empresa e Iniciativa Emprendedora"> Empresa e
+                    Iniciativa Emprendedora <br>
+                    <br>
+                    Obervaciones:
+                    <br>
+                    <textarea name="taObservations" cols="30" rows="10"
+                        placeholder="Indique si tiene alguna observacion..."></textarea>
+                    <br>
+                    <input type="submit" value="Enviar">
+                    <input type="button" value="Reestablecer" onclick="document.getElementById('dawForm').reset();">
+                </form>
+            </div>
+            <div class="col-6">
+                <h2>Matriculacion en el ciclo de grado superior DAW</h2>
+                <form action="" onsubmit="validarRadios() && validarCheckboxes();" id="smrForm">
+                    Apellidos: <input type="text" name="ittSName" required pattern="^[A-Z][a-z]+(\s[A-Z][a-z]+)*$">
+                    Nombre: <input type="text" name="ittSName" required pattern="^[A-Z][a-z]+(\s[A-Z][a-z]+)*$">
+                    <br>
+                    Domicilio: <input type="text" name="ittDomicilio" required pattern="^[A-Za-z0-9\s\.,]+$">
+                    <br>
+                    Sexo:
+                    <input type="radio" name="itrGender" value="Hombre">Hombre
+                    <input type="radio" name="itrGender" value="Mujer">Mujer
+
+                    <br>
+                    Curso
+                    <select name="sCurso">
+                        <option value="1">1º</option>
+                        <option value="2">2º</option>
+                    </select>
+                    <br>
+                    Módulos en que se matricula: <br>
+                    <input type="checkbox" name="itcbModules" value="Aplicaciones Ofimaticas"> Aplicaciones Ofimaticas
+                    <br>
+                    <input type="checkbox" name="itcbModules" value="Redes Locales"> Redes Locales <br>
+                    <input type="checkbox" name="itcbModules" value="Sistemas Operativos Monopuesto"> Sistemas
+                    Operativos Monopuesto <br>
+                    <input type="checkbox" name="itcbModules" value="Montaje y Mantenimiento de Equipos"> Montaje y
+                    Mantenimiento de Equipos <br>
+                    <input type="checkbox" name="itcbModules" value="Formacion y orientacion laboral"> Formacion y
+                    orientacion laboral <br>
+                    <input type="checkbox" name="itcbModules" value="Aplicaiones Web"> Aplicaiones Web <br>
+                    <input type="checkbox" name="itcbModules" value="Seguridad Informatica"> Seguridad Informatica <br>
+                    <input type="checkbox" name="itcbModules" value="Servicios en Red"> Servicios en Red <br>
+                    <input type="checkbox" name="itcbModules" value="Desarrollo interfaces Web"> Sistemas Operativos en Red <br>
+                    <input type="checkbox" name="itcbModules" value="Empresa e Iniciativa Emprendedora"> Empresa e
+                    Iniciativa Emprendedora <br>
+                    <br>
+                    Obervaciones:
+                    <br>
+                    <textarea name="taObservations" cols="30" rows="10"
+                        placeholder="Indique si tiene alguna observacion..."></textarea>
+                    <br>
+                    <input type="submit" value="Enviar">
+                    <input type="button" value="Reestablecer" onclick="document.getElementById('smrForm').reset();">
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

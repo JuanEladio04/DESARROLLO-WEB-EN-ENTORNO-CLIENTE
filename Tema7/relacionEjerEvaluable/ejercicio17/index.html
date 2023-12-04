@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="models/Fraccion.js"></script>
+</head>
+
+<body>
+
+    <script>
+        let f1 = new Fraccion(5, 10);
+        let f2 = new Fraccion(6, 18);
+        document.write('<h1>Fraccion 1</h1>');
+        document.write(f1.toString() + '<br>');
+        document.write('<h1>Fraccion 2</h1>');
+        document.write(f2.toString() + '<br>');
+
+        document.write('<h1>Multiplicacion</h1>');
+        let fr = f1.multiplicarF(f2);
+        document.write(fr.toString() + '<br>');
+
+        document.write('<h1>División</h1>');
+        fr = f1.dividirF(f2);
+        document.write(fr.toString() + '<br>');
+
+        document.write('<h1>Simplicacion</h1>');
+        f1.simplificar();
+        f2.simplificar();
+        document.write(f1.toString() + '<br>');
+        document.write(f2.toString() + '<br>');
+
+    </script>
+
+</body>
+
+</html>

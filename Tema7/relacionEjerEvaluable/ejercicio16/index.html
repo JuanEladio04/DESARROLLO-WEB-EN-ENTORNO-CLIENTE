@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="models/Punto.js"></script>
+</head>
+
+<body>
+
+    <script>
+        let pointA = new Punto(4, 2);
+        let pointB = new Punto(3, 7);
+        document.write("<p>Punto A: " + pointA.toString() + "</p>");
+        document.write("<p>Punto B: " + pointA.toString() + "</p>");
+        pointA.cambiar(2, 1);
+        document.write("<p>Cambio de valores del punto A: " + pointA.toString() + "</p>");
+        document.write("<p>Comprueba si los puntos son iguales</p>");
+        if(pointA.iguales(pointB)){
+            document.write("<p>Los puntos son iguales</p>");
+        }
+        else{
+            document.write("<p>Los puntos no son iguales</p>");
+        }
+
+        document.write("<p>Creación de un tercer punto en base a la suma de los anteriores:</p>");
+        let pointC = pointA.sumar(pointB);
+        document.write("<p>Punto C: " + pointC.toString() + "</p>");
+        document.write("<p>Calculo e la distncia el punto A y el B: "  + pointA.distancia(pointB) + "</p>");
+    </script>
+
+</body>
+
+</html>

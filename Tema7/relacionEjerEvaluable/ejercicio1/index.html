@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="main.js"></script>
+</head>
+<body>
+    <p>Introduzca usuario y clave...</p>
+    <form action="">
+        usuario: <input type="text" name="ittUser" required> <br>
+        clave: <input type="password" name="itpPassword" required> <br>
+        <input type="button" name="itbLogin" value="Enviar" onclick="checkCredentials(ittUser.value, itpPassword.value)" required> 
+        <input type="button" name="itbClean" value="Limpiar" onclick="cleanInputs()" required> 
+    </form>
+</body>
+</html>
