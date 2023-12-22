@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="model/reservas.js"></script>
+
+</head>
+
+<body>
+    <h1>Reserva de clases</h1>
+    <script>
+        var reserva = new Reserva();
+    </script>
+    <form action="">
+        Nombre: <select name="sAula" id="">
+            <option value="Salon de actos">Salon de actos</option>
+            <option value="Aula 18">Aula 18</option>
+            <option value="Aula f12">Aula f12</option>
+        </select>
+        Profesor: <input type="text" name="ittProf">
+        Fecha: <input type="date" name="itdDate">
+        Hora: <input type="time" name="ittiHour">
+        <input type="button" value="Hacer reserva"
+            onclick="reserva = new Reserva(sAula.value, ittProf.value, itdDate.value, ittiHour.value);">
+    </form>
+    <br>
+    <form action="">
+        ¿Cuanto desea aumentar su reserva?
+        <input type="number" name="itnReserve">
+        <input type="button" value="Aumentar reserva" onclick="reserva.aumentarTiempo(itnReserve.value)">
+    </form>
+    <br>
+    <form action="">
+        <input type="button" value="Muestra reserva" onclick="reserva.imprimirReserva()">
+    </form>
+
+    <div id="reserva">
+
+    </div>
+</body>
+
+</html>

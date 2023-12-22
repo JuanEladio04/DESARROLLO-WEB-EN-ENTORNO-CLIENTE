@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Gestión Material Deportivo</title>
+    <style>
+        input[type=number] {
+            width: 50px;
+        }
+
+        .oculto {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Gestión Material Deportivo IES Marqués de Comares</h1>
+        <hr>
+        <form action="" id="login">
+            <h2>Identificación:</h2><br>
+            <label for="Profesor">Profesor</label>
+            <input type="text" id="profesor" name="ittUser" required pattern="^[A-Za-z\d ]+$"><br>
+            <label for="Password">Contraseña:</label>
+            <input name="itpPassword" type="password" id="password" required pattern="^[A-Za-z\d ]+$"><br>
+            <input type="submit" value="Acceder" onclick="login(ittUser.value, itpPassword.value)">
+        </form>
+        <p></p>
+    </div>
+    <div id="incidencias" style="display: none;">
+        <table>
+            <tr>
+                <h2>Gestión Repuestos Deportivos</h2>
+            </tr>
+            <tr>
+                <form name="formulario" action="#" method="get">
+                    Deporte a gestionar:
+                    <select name="tipoDeporte">
+                        <option>Fútbol</option>
+                        <option>Baloncesto</option>
+                        <option>Gimnasia</option>
+                    </select><br><br><br>
+
+
+
+                    <!--aquí iría el select si hemos elegido fútbol o baloncesto-->
+                    <div id="futOrBask">
+                        <select required id="fbSelect">
+                            <option value="Nuevo material">Nuevo material</option>
+                            <option value="Reposición de material">Reposición de material</option>
+                        </select>
+                        <br>
+                        <label for="">Unidades:</label>
+                        <input type="text" id="units" required>
+                    </div>
+
+                    <br><br>
+
+                    <!-- estas serían las casillas de verificación en caso de elegir gimnasia-->
+                    <div id="gimn" style="display: none;">
+                        <label for="gimnasia">Materiales: </label><br>
+                        <input type="checkbox" name="aros" value="aros"> Aros<span style="display: none;" class="unid">&nbsp;&nbsp;Unidades: <input type="text" required class="gUnid"></span><br>
+                        <input type="checkbox" name="cinta" value="cintas"> Cintas<span style="display: none;" class="unid">&nbsp;&nbsp;Unidades: <input type="text" required class="gUnid"></span><br>
+                        <input type="checkbox" name="pesas" value="pesas"> Pesas&nbsp;&nbsp;<span style="display: none;" class="unid">Unidades: <input type="text" required class="gUnid"></span><br>
+                        <input type="checkbox" name="mancuernas" value="mancuernas"> Mancuernas&nbsp;&nbsp;<span style="display: none;" class="unid">Unidades: <input type="text" required class="gUnid"></span><br>
+                    </div>
+                    <br /> <br />
+                    <input type="submit" value="Enviar" id="Enviar1" onclick="showResults()">
+                    <input type="reset" id="Reset1" value="Limpiar" onclick="document.getElementById('formulario').reset();">
+                </form>
+                </td>
+
+
+            </tr>
+        </table>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

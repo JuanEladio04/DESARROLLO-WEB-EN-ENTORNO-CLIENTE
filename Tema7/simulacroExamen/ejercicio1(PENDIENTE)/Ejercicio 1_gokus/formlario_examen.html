@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>REPARACIONES COMARES</title>
+    <style>
+        input[type=number] {
+            width: 50px;
+        }
+
+        #noVisible{
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Centro de Reparaciones IES Marqués de Comares</h1>
+    <table>
+        <tr>
+            <td width="800">
+                <h2>Solicutud de Reparación</h2>
+                <form name="formulario1" action="#" method="get">
+                    <label for="apellido1">Apellidos: </label>
+                    <input type="text" name="apellido1" id="apellido1" size="40" maxlength="40" required>
+                    <label for="nombre1">Nombre: </label>
+                    <input type="text" name="nombre1" id="nombre1" required>
+                    <br /> <br />
+                    <label for="telefono">Teléfono: </label>
+                    <input type="text" name="telefono" id="telefono" size="10" maxlength="9" required>
+                    <label for="numserire">Nº serie equipo: </label>
+                    <input type="text" name="numserie" id="numserie" size="30" maxlength="30" required>
+                    <br /> <br />
+                    <label for="clasereparacion">Tipo de reparación: </label>
+                    <input type="radio" name="clasereparacion" value="sobremesa"> Ordenador de sobremesa
+                    <input type="radio" name="clasereparacion" value="portatil" onfocus="poner()" onblur="quitar()"> Ordenador portátil
+                    <input type="radio" name="clasereparacion" value="impresora" id="impresora"> Impresora
+                    <br /> <br />
+
+                    <div id="noVisible">
+                        <label>Marca: </label><input type="text" name="marca" id="marca" size="50"><br>
+                        <label>Modelo: </label><input type="text" name="modelo" id="modelo" size="50"><br><br>
+                    </div>
+
+                    <label for="obtencion1">Antigüedad: </label>
+                    <input type="number" name="antiguedad" id="antiguedad">
+                    <br /> <br />
+                    <label for="select1">Tipo avería: </label>
+                    <select name="tipoaveria" id="tipoaveria">
+                        <option>hardware</option>
+                        <option>software</option>
+                    </select>
+                    <br /> <br />
+                    <label for="sintomas">Síntoms avería: </label><br>
+                    <input class="checkbox" onclick="mostrar()" type="checkbox" name="nohacenada" value="nohacenada"
+                        id="nohacenada"> No hace nada<br>
+                    <input class="checkbox" onclick="mostrar()" type="checkbox" name="pitaynoenciende"
+                        value="pitaynoenciende" id="pitaynoenciende"> Pita y no enciende<br>
+                    <input class="checkbox" onclick="mostrar()" type="checkbox" name="arrancayseapaga"
+                        value="arrancayseapaga" id="arrancayseapaga"> Arranca pero al rato se apaga<br>
+                    <input class="checkbox" onclick="mostrar()" type="checkbox" name="novasistemaoperativo"
+                        value="novasistemaoperativo" id="novasistemaoperativo"> El sistema operativo no llega a
+                    arrancar<br>
+                    <input class="checkbox" onclick="mostrar()" type="checkbox" name="pantallazoazul"
+                        value="pantallazoazul" id="pantallazoazul"> Pantallazo azul<br>
+                    <br /> <br />
+                    <label for="observaciones1">Observaaciones: </label><br>
+                    <textarea name="observaciones1" id="observaciones1" rows="10"
+                        cols="50" onclick="negro()">Indique si tiene alguna observación que crea importante que debamos conocer...</textarea>
+                    <br /> <br />
+                    <h2>Datos para próximos accesos:</h2><br>
+                    <label for="Usuario">Usuario</label>
+                    <input type="text" id="usuario"><br>
+                    <label for="Password">Contraseña:</label>
+                    <input type="password" id="password" pattern="^_[0-9]{3}[A-Z][a-z]_$"><br>
+                    <p></p>
+                    <input type="submit" value="Enviar" id="Enviar1" onclick="enviar()">
+                    <input type="reset" id="Reset1" value="Limpiar">
+                </form>
+            </td>
+
+
+        </tr>
+    </table>
+
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>
