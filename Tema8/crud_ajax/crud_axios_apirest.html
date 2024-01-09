@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD API REST AXIOS</title>
+</head>
+
+<body>
+    <h1>CRUD API REST AXIOS</h1>
+    <section class="crud">
+        <div>
+            <h2 class="crud-titulo">Agregar Nuevo Empleado</h2>
+            <form class="crud-form">
+                <input type="text" name="ittPuesto" placeholder="Puesto" required>
+                <br>
+                <input type="text" name="ittNombre" placeholder="Nombre" required>
+                <br>
+                <input type="submit" value="Enviar">
+                <input type="hidden" name="ithId">
+            </form>
+        </div>
+        <div>
+            <h2>Empleados de la tienda</h2>
+            <table class="crud-table" border=1>
+                <thead>
+                    <tr>
+                        <th>Puesto</th>
+                        <th>Nombre</th>
+                        <th>Operación</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <template id="crud-template">
+        <tr>
+            <td class="puesto"></td>
+            <td class="nombre"></td>
+            <td>
+                <button class="edit" id="editar">Editar</button>
+                <button class="delete" id="borrar">Eliminar</button>
+            </td>
+        </tr>
+    </template>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.min.js"></script>
+    <script src="js/crud_axios_apirest.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+{
+  "empleados": [
+    {
+      "id": "1",
+      "puesto": "Gerente de Tienda",
+      "nombre": "Ana Rodríguez"
+    },
+    {
+      "id": "2",
+      "puesto": "Vendedor de Hardware",
+      "nombre": "Carlos Martínez"
+    },
+    {
+      "id": "3",
+      "puesto": "Especialista en Software",
+      "nombre": "Laura Gómez"
+    },
+    {
+      "id": "4",
+      "puesto": "Técnico de Reparación",
+      "nombre": "Javier López"
+    },
+    {
+      "id": "463c",
+      "puesto": "Ingeniera de Software",
+      "nombre": "Clara Giménez"
+    }
+  ],
+  "productos": [
+    {
+      "id": "1",
+      "nombre": "Laptop Gamer",
+      "precio": 1500,
+      "stock": 20
+    },
+    {
+      "id": "2",
+      "nombre": "Tarjeta Gráfica NVIDIA RTX 3080",
+      "precio": 800,
+      "stock": 10
+    },
+    {
+      "id": "3",
+      "nombre": "Monitor Curvo 27 pulgadas",
+      "precio": 300,
+      "stock": 15
+    },
+    {
+      "nombre": "PC Sobremesa",
+      "precio": "2500",
+      "stock": "50",
+      "id": "acf2"
+    }
+  ],
+  "proveedores": [
+    {
+      "id": "1",
+      "nombre": "TechSupply",
+      "contacto": "Maria Pérez"
+    },
+    {
+      "id": "2",
+      "nombre": "GamingTech",
+      "contacto": "Juan Rodríguez"
+    },
+    {
+      "id": "3",
+      "nombre": "PeriféricosExpress",
+      "contacto": "Elena Gutiérrez"
+    },
+    {
+      "id": "d5fb",
+      "nombre": "TccnologiesCorp",
+      "contacto": "Clara Giménez"
+    }
+  ]
+}
